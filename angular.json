@@ -37,22 +37,24 @@
       "sourceRoot": "projects/angular-notifier-3-demo/src",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-notifier-3-demo",
+            "outputPath": {
+              "base": "dist/angular-notifier-3-demo"
+            },
             "index": "projects/angular-notifier-3-demo/src/index.html",
-            "main": "projects/angular-notifier-3-demo/src/main.ts",
-            "polyfills": "projects/angular-notifier-3-demo/src/polyfills.ts",
+            "polyfills": [
+              "projects/angular-notifier-3-demo/src/polyfills.ts"
+            ],
             "tsConfig": "projects/angular-notifier-3-demo/tsconfig.app.json",
             "assets": ["projects/angular-notifier-3-demo/src/favicon.ico", "projects/angular-notifier-3-demo/src/assets"],
             "styles": ["projects/angular-notifier-3-demo/src/styles.scss"],
             "scripts": [],
-            "vendorChunk": true,
             "extractLicenses": false,
-            "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "browser": "projects/angular-notifier-3-demo/src/main.ts"
           },
           "configurations": {
             "production": {
@@ -65,9 +67,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "namedChunks": false,
-              "vendorChunk": false,
-              "buildOptimizer": true
+              "namedChunks": false
             }
           },
           "defaultConfiguration": ""
