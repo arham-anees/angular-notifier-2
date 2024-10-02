@@ -6,7 +6,11 @@
 
 </div>
 
-<br><br>
+<br>
+## Important
+
+**This library is continuation of popular [angular-notifier](https://www.npmjs.com/package/angular-notifier) which is not supporting the latest angular versions**
+<br>
 
 ## Demo
 
@@ -47,6 +51,8 @@ The following list describes the compatibility with Angular:
 | `12.x`           | `14.x`  | Ivy (partial mode) |
 | `13.x`           | `15.x`  | Ivy (partial mode) |
 | `14.x`           | `16.x`  | Ivy (partial mode) |
+| `17.x`           | `17.x`  | Ivy (partial mode) |
+| `18.x`           | `18.x`  | Ivy (partial mode) |
 
 <br><br><br>
 

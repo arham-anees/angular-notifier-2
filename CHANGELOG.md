@@ -2,6 +2,18 @@
 
 Also see **[GitHub releases](https://github.com/arham-anees/angular-notifier-3/releases)**.
 
+## [18.0.0](https://github.com/arham-anees/angular-notifier-3/releases/tag/18.0.0) (2024-10-02)
+
+### Features
+
+- Upgrade to Angular 18
+
+### BREAKING CHANGES
+
+- The upgrade to Angular 16 breaks compatibility with Angular 17.
+
+<br>
+
 ## [17.0.0](https://github.com/arham-anees/angular-notifier-3/releases/tag/17.0.0) (2024-10-02)
 
 ### Features
@@ -12,7 +24,6 @@ Also see **[GitHub releases](https://github.com/arham-anees/angular-notifier-3/r
 
 - The upgrade to Angular 16 breaks compatibility with Angular 16.
 
-<br>
 <br>
 
 ## [14.0.0](https://github.com/arham-anees/angular-notifier-3/releases/tag/14.0.0) (2023-06-05)
