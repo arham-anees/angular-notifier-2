@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@angular-builders/jest": "17.0.x",
-    "@angular-devkit/build-angular": "16.0.x",
+    "@angular-devkit/build-angular": "17.0.x",
     "@angular/cli": "16.0.x",
     "@angular/common": "16.0.x",
     "@angular/compiler": "16.0.x",
