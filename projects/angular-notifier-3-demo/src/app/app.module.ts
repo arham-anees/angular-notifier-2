@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NotifierModule, NotifierOptions } from 'angular-notifier';
+import { NotifierModule, NotifierOptions } from 'angular-notifier-3';
 
 import { AppComponent } from './app.component';
 
@@ -56,4 +56,4 @@ const customNotifierOptions: NotifierOptions = {
   declarations: [AppComponent],
   imports: [BrowserModule, NotifierModule.withConfig(customNotifierOptions)],
 })
-export class AppModule {}
+export class AppModule { }

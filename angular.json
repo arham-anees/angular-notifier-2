@@ -6,20 +6,20 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-notifier": {
+    "angular-notifier-3": {
       "projectType": "library",
-      "root": "projects/angular-notifier",
-      "sourceRoot": "projects/angular-notifier/src",
+      "root": "projects/angular-notifier-3",
+      "sourceRoot": "projects/angular-notifier-3/src",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/angular-notifier/tsconfig.lib.json",
-            "project": "projects/angular-notifier/ng-package.json"
+            "tsConfig": "projects/angular-notifier-3/tsconfig.lib.json",
+            "project": "projects/angular-notifier-3/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/angular-notifier/tsconfig.lib.prod.json"
+              "tsConfig": "projects/angular-notifier-3/tsconfig.lib.prod.json"
             }
           }
         },
@@ -31,21 +31,21 @@
         }
       }
     },
-    "angular-notifier-demo": {
+    "angular-notifier-3-demo": {
       "projectType": "application",
-      "root": "projects/angular-notifier-demo/",
-      "sourceRoot": "projects/angular-notifier-demo/src",
+      "root": "projects/angular-notifier-3-demo/",
+      "sourceRoot": "projects/angular-notifier-3-demo/src",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-notifier-demo",
-            "index": "projects/angular-notifier-demo/src/index.html",
-            "main": "projects/angular-notifier-demo/src/main.ts",
-            "polyfills": "projects/angular-notifier-demo/src/polyfills.ts",
-            "tsConfig": "projects/angular-notifier-demo/tsconfig.app.json",
-            "assets": ["projects/angular-notifier-demo/src/favicon.ico", "projects/angular-notifier-demo/src/assets"],
-            "styles": ["projects/angular-notifier-demo/src/styles.scss"],
+            "outputPath": "dist/angular-notifier-3-demo",
+            "index": "projects/angular-notifier-3-demo/src/index.html",
+            "main": "projects/angular-notifier-3-demo/src/main.ts",
+            "polyfills": "projects/angular-notifier-3-demo/src/polyfills.ts",
+            "tsConfig": "projects/angular-notifier-3-demo/tsconfig.app.json",
+            "assets": ["projects/angular-notifier-3-demo/src/favicon.ico", "projects/angular-notifier-3-demo/src/assets"],
+            "styles": ["projects/angular-notifier-3-demo/src/styles.scss"],
             "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
@@ -58,8 +58,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/angular-notifier-demo/src/environments/environment.ts",
-                  "with": "projects/angular-notifier-demo/src/environments/environment.prod.ts"
+                  "replace": "projects/angular-notifier-3-demo/src/environments/environment.ts",
+                  "with": "projects/angular-notifier-3-demo/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -75,11 +75,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "angular-notifier-demo:build"
+            "buildTarget": "angular-notifier-3-demo:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "angular-notifier-demo:build:production"
+              "buildTarget": "angular-notifier-3-demo:build:production"
             }
           }
         }

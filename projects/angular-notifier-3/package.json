@@ -1,5 +1,5 @@
 {
-  "name": "angular-notifier",
+  "name": "angular-notifier-3",
   "sideEffects": [
     "*.scss",
     "*.css"

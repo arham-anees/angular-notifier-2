@@ -1,6 +1,6 @@
 <div align="center">
 
-# angular-notifier
+# angular-notifier-3
 
 **A well designed, fully animated, highly customizable, and easy-to-use notification library for your **Angular 2+** application.**
 
@@ -10,19 +10,19 @@
 
 ## Demo
 
-You can play around with this library with **[this Stackblitz right here](https://stackblitz.com/edit/angular-notifier-demo)**.
+You can play around with this library with **[this Stackblitz right here](https://stackblitz.com/edit/angular-notifier-3-demo)**.
 
-![Angular Notifier Animated Preview GIF](/docs/angular-notifier-preview.gif?raw=true)
+![Angular Notifier Animated Preview GIF](/docs/angular-notifier-3-preview.gif?raw=true)
 
 <br><br><br>
 
 ## How to install
 
-You can get **angular-notifier** via **npm** by either adding it as a new _dependency_ to your `package.json` file and running npm install,
+You can get **angular-notifier-3** via **npm** by either adding it as a new _dependency_ to your `package.json` file and running npm install,
 or running the following command:
 
 ```bash
-npm install angular-notifier
+npm install angular-notifier-3
 ```
 
 <br>
@@ -52,18 +52,18 @@ The following list describes the compatibility with Angular:
 
 ## How to setup
 
-Before actually being able to use the **angular-notifier** library within our code, we have to first set it up within Angular, and also
+Before actually being able to use the **angular-notifier-3** library within our code, we have to first set it up within Angular, and also
 bring the styles into our project.
 
 <br>
 
 ### 1. Import the `NotifierModule`
 
-First of all, make **angular-notifier** globally available to your Angular application by importing (and optionally also configuring) the
+First of all, make **angular-notifier-3** globally available to your Angular application by importing (and optionally also configuring) the
 `NotifierModule` the your root Angular module. For example:
 
 ```typescript
-import { NotifierModule } from 'angular-notifier';
+import { NotifierModule } from 'angular-notifier-3';
 
 @NgModule({
   imports: [NotifierModule],
@@ -75,7 +75,7 @@ But wait -- your probably might want to customize your notifications' look and b
 call the `withConfig` method on the `NotifierModule`, and pass in the options. For example:
 
 ```typescript
-import { NotifierModule } from 'angular-notifier';
+import { NotifierModule } from 'angular-notifier-3';
 
 @NgModule({
   imports: [
@@ -111,33 +111,33 @@ export class AppComponent {}
 
 ### 3. Import the styles
 
-Of course we also need to import the **angular-notifier** styles into our application. Depending on the architecture of your Angular
+Of course we also need to import the **angular-notifier-3** styles into our application. Depending on the architecture of your Angular
 application, you want to either import the original SASS files, or the already compiled CSS files instead - or none of them if you wish to
 write your own styles from scratch.
 
 #### The easy way: Import all the styles
 
-To import all the styles, simple include either the `~/angular-notifier/styles.(scss|css)` file. It contains the core styles as well as all
+To import all the styles, simple include either the `~/angular-notifier-3/styles.(scss|css)` file. It contains the core styles as well as all
 the themes and notification types.
 
 #### The advanced way: Only import the styles actually needed
 
 To keep the size if your styles as small as possible (improving performance for the perfect UX), your might instead decide to only import
-the styles actually needed by our application. The **angular-notifier** styles are modular:
+the styles actually needed by our application. The **angular-notifier-3** styles are modular:
 
-- The `~/angular-notifier/styles/core.(scss|css)` file is always required, it defines the basic styles (such as the layout)
-- Themes can be imported from the `~/angular-notifier/styles/theme` folder
-- The different notification types, then, can be imported from the `~/angular-notifier/styles/types` folder
+- The `~/angular-notifier-3/styles/core.(scss|css)` file is always required, it defines the basic styles (such as the layout)
+- Themes can be imported from the `~/angular-notifier-3/styles/theme` folder
+- The different notification types, then, can be imported from the `~/angular-notifier-3/styles/types` folder
 
 <br><br><br>
 
 ## How to use
 
-Using **angular-notifier** is as simple as it can get -- simple import and inject the `NotifierService` into every component (directive,
+Using **angular-notifier-3** is as simple as it can get -- simple import and inject the `NotifierService` into every component (directive,
 service, ...) you want to use in. For example:
 
 ```typescript
-import { NotifierService } from 'angular-notifier';
+import { NotifierService } from 'angular-notifier-3';
 
 @Component({
   // ...
@@ -214,11 +214,11 @@ this.notifier.hideAll();
 
 ## How to customize
 
-From the beginning, the **angular-notifier** library has been written with customizability in mind. The idea is that **angular-notifier**
+From the beginning, the **angular-notifier-3** library has been written with customizability in mind. The idea is that **angular-notifier-3**
 works the way your want it to, so that you can make it blend perfectly into the rest of your application. Still, the default configuration
 should already provide a great User Experience.
 
-> Keep in mind that **angular-notifier** can be configured only once - which is at the time you import the `NotifierModule` into your root
+> Keep in mind that **angular-notifier-3** can be configured only once - which is at the time you import the `NotifierModule` into your root
 > (app) module.
 
 <br>

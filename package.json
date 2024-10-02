@@ -1,11 +1,11 @@
 {
-  "name": "angular-notifier",
+  "name": "angular-notifier-3",
   "description": "A well designed, fully animated, highly customizable, and easy-to-use notification library for your Angular application.",
-  "version": "14.0.0",
+  "version": "17.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dominique-mueller/angular-notifier"
+    "url": "https://github.com/arham-anees/angular-notifier-3"
   },
   "keywords": [
     "angular",
@@ -21,17 +21,17 @@
     "library"
   ],
   "scripts": {
-    "build:demo": "ng build angular-notifier-demo --configuration production",
+    "build:demo": "ng build angular-notifier-3-demo --configuration production",
     "build:library": "rimraf -r dist && npm run build:library:angular && npm run build:library:sass && npm run build:library:css && npm run build:library:docs && npm run build:library:package",
-    "build:library:angular": "ng build angular-notifier --configuration production",
-    "build:library:css": "sass projects/angular-notifier/src:dist/angular-notifier --style=expanded",
-    "build:library:docs": "copyfiles \"docs/**\" CHANGELOG.md MIGRATION-GUIDE.md LICENSE README.md \"dist/angular-notifier\"",
+    "build:library:angular": "ng build angular-notifier-3 --configuration production",
+    "build:library:css": "sass projects/angular-notifier-3/src:dist/angular-notifier-3 --style=expanded",
+    "build:library:docs": "copyfiles \"docs/**\" CHANGELOG.md MIGRATION-GUIDE.md LICENSE README.md \"dist/angular-notifier-3\"",
     "build:library:package": "node tools/update-package.js",
-    "build:library:sass": "copyfiles \"projects/angular-notifier/src/**/*.scss\" \"dist/angular-notifier\" --up 3",
-    "lint:library": "eslint projects/angular-notifier/src/**/*.ts --max-warnings 0",
-    "lint:library:fix": "eslint projects/angular-notifier/src/**/*.ts --max-warnings 0 --fix",
-    "start": "ng serve angular-notifier-demo",
-    "test:library": "ng test angular-notifier",
+    "build:library:sass": "copyfiles \"projects/angular-notifier-3/src/**/*.scss\" \"dist/angular-notifier-3\" --up 3",
+    "lint:library": "eslint projects/angular-notifier-3/src/**/*.ts --max-warnings 0",
+    "lint:library:fix": "eslint projects/angular-notifier-3/src/**/*.ts --max-warnings 0 --fix",
+    "start": "ng serve angular-notifier-3-demo",
+    "test:library": "ng test angular-notifier-3",
     "test:library:upload-coverage": "codecov -f coverage/coverage-final.json"
   },
   "dependencies": {

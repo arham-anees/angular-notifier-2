@@ -6,7 +6,7 @@ import { NotifierConfig, NotifierOptions } from './models/notifier-config.model'
  * Injection Token for notifier options
  */
 export const NotifierOptionsToken: InjectionToken<NotifierOptions> = new InjectionToken<NotifierOptions>(
-  '[angular-notifier] Notifier Options',
+  '[angular-notifier-3] Notifier Options',
 );
 
 /**

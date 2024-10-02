@@ -16,8 +16,8 @@
       "dom"
     ],
     "paths": {
-      "angular-notifier": [
-        "dist/angular-notifier"
+      "angular-notifier-3": [
+        "dist/angular-notifier-3"
       ]
     },
     "useDefineForClassFields": false

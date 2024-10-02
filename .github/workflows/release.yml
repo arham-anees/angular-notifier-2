@@ -21,6 +21,6 @@ jobs:
     - name: Build library
       run: npm run build:library
     - name: Publish to npm
-      run: npm publish ./dist/angular-notifier
+      run: npm publish ./dist/angular-notifier-3
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

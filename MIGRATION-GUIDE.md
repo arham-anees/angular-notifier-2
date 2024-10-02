@@ -4,7 +4,7 @@ Strictly following the principle of semantic versioning, breaking changes only o
 developers a more detailed insight into the changes introduced with new major releases, in particular the breaking changes and their
 consequences, while also suggesting a migration strategy.
 
-Also see then **[CHANGELOG](./CHANGELOG.md)** and **[GitHub releases](https://github.com/dominique-mueller/angular-notifier/releases)**.
+Also see then **[CHANGELOG](./CHANGELOG.md)** and **[GitHub releases](https://github.com/dominique-mueller/angular-notifier-3/releases)**.
 
 <br>
 
@@ -34,9 +34,9 @@ method is now called `NotifierModule.withConfig()` instead. This seemed to be th
 With Angular 4+, a new recommendation regarding the publishment of Angular libraries has been defined. This includes a different folder
 structure, and also different output files. Therefore, the published files now include:
 
-- `angular-notifier.js` as the "rolled up" ES6 FESM (Flat ECMAScript Module) bundle
-- `angular-notifier.es5.js` as the "rolled up" ES5 FESM (Flat ECMAScript Module) bundle, however using ES6 import
-- `angular-notifier.umd.js` as the ES5 UMD (Universal Module Definition) bundle, here for compatibility reasons
+- `angular-notifier-3.js` as the "rolled up" ES6 FESM (Flat ECMAScript Module) bundle
+- `angular-notifier-3.es5.js` as the "rolled up" ES5 FESM (Flat ECMAScript Module) bundle, however using ES6 import
+- `angular-notifier-3.umd.js` as the ES5 UMD (Universal Module Definition) bundle, here for compatibility reasons
 - Both the original `styles.scss` and compiled `styles.css` file exist, yet are available at the root path; sub-files are now located in the
   "styles" folder
 - Also, the places of all the sourcemaps and TypeScript definition files changed (which, however, shouldn't affect anyone)
@@ -50,8 +50,8 @@ its published files automatically.*
 The implementation of animations has been changed slightly, so that now the *default* Web Animations API polyfill should be sufficient to
 make this library work in older browsers. This is also the polyfill defined within Angular CLI based projects in the `polyfills.ts` file by
 default. While it for sure will save us a few bytes over the network line, it also prevents confusion amongst developers (such as
-**[#6](https://github.com/dominique-mueller/angular-notifier/issues/6)**,
-**[#10](https://github.com/dominique-mueller/angular-notifier/issues/10)**). In particular:
+**[#6](https://github.com/dominique-mueller/angular-notifier-3/issues/6)**,
+**[#10](https://github.com/dominique-mueller/angular-notifier-3/issues/10)**). In particular:
 
 ``` typescript
 // With 1.x
